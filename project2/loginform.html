@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="assets/loginform.css">
+</head>
+<body>
+  <h2>Login Form</h2>
+  <form id="login-form" action="#" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div>
+      <label for="page">Select Web Page:</label>
+      <select id="page" name="page" required>
+        <option value="">Select a page</option>
+        <option value="planet_calck.html">planet calck</option>
+        <option value="cars.html">cars calck</option>
+        <option value="dinosuors_calck.html">dinosuors calck</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault(); //Prevent the form from submitting
+
+      var name = document.getElementById('name').value;
+      var age = document.getElementById('age').value;
+      var page = document.getElementById('page').value;
+
+      //Redirect the user to the selected page
+      window.location.href = page;
+    });
+  </script>
+</body>
+</html>

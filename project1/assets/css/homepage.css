@@ -1,0 +1,144 @@
+@import url(skills.css);
+@import url(aboutme.css);
+@import url(mediaqueries.css);
+:root{
+    --backgroundliner: #7e7e7e;
+    --backgroundcolorlinear:#174e72;
+    --ligtcolr:#ffffffff;
+    --itemcolor:#ffffffff;
+    --padding:7%;
+    --background2:#1e2022;
+    --color1:#ff3636;
+  }
+h2{
+    font-size: 2.2rem;
+    letter-spacing: .12rem;
+    cursor:pointer
+}
+h1{
+    font-size: 4.2rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    color: #581e1e;
+}
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top right,var(--backgroundliner)50%, var(--backgroundcolorlinear) 50%), url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+nav{
+    padding-top:2.2rem ;
+    padding-left:var(--padding) ;
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+a:hover{
+    color:red;
+}
+.itemcolortext{
+    color:#ff3636;
+}
+.ali{
+    color:#ffffffff
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.minu{
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+}
+#ziad{
+    color: #dfc922;
+}
+.ziad{
+    color: black;
+}
+.alo{
+    color:#dfc922;
+}
+.maintext{
+    position: relative;
+    bottom: 70px;
+}
+.media{
+    margin-top: 3.7rem;
+}
+.media img{
+    margin-right: 1.7rem;
+    width: 3rem;
+    transition:0.5s;
+}
+.media img:hover{
+    transform: scale(1.3);
+}
+.myimgs{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+.myimgs img{
+    position: absolute;
+    height: 100%;
+    transform: translateX(-50%);
+    left:50%;
+    bottom:0;
+    transition: bottom 1s, left 1s;
+}
+.myimgs:hover .background{
+    bottom: 40px;
+}
+.myimgs:hover .myphoto{
+    left: 35%;
+}
+.Ali2{
+    color: rgb(255, 255, 255);
+}
+.media .mediaimg{
+    width:4rem;
+}
+.color2{
+    color: #ffffff
+}
+@import url(skills.css);
+@import url(aboutme.css);
+@import url(mediaqueries.css);

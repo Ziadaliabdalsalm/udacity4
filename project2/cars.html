@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KidCalc</title>
+  <link rel="stylesheet" href="assets/loginform.css">
+  <style>
+    body{
+      background-image: url(assets/imgs/cars.jpg);
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="loginform.html" id="nav-registration">Registration</a></li>
+      <li><a href="#" id="nav-calculator">Calculator</a></li>
+    </ul>
+  </nav>
+    <div id="calculator-page">
+      <h1>KidCalc</h1>
+      <input type="text" id="user-input" placeholder="Enter your calculation here">
+      <div id="buttons">
+        <button onclick="addToInput('1')">1</button>
+        <button onclick="addToInput('2')">2</button>
+        <button onclick="addToInput('3')">3</button>
+        <button onclick="addToInput('+')">+</button>
+        <button onclick="addToInput('4')">4</button>
+        <button onclick="addToInput('5')">5</button>
+        <button onclick="addToInput('6')">6</button>
+        <button onclick="addToInput('-')">-</button>
+        <button onclick="addToInput('7')">7</button>
+        <button onclick="addToInput('8')">8</button>
+        <button onclick="addToInput('9')">9</button>
+        <button onclick="addToInput('*')">*</button>
+        <button onclick="addToInput('0')">0</button>
+        <button onclick="addToInput('.')">.</button>
+        <button onclick="addToInput('/')">/</button>
+        <button onclick="addToInput('&lt;')">&lt;</button>
+        <button onclick="addToInput('&gt;')">&gt;</button>
+        <button onclick="deleteLast()">Del</button>
+      </div>
+      <p id="result"></p>
+      <input type="text" id="user-answer" placeholder="Enter your answer here">
+      <button>Check Answer</button>
+      <span id="points">Points: 0</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+:root{
+    --backgroundliner: #7e7e7e;
+    --backgroundcolorlinear:#174e72;
+    --ligtcolr:#ffffffff;
+    --itemcolor:#ffffffff;
+    --padding:7%;
+    --background2:#1e2022;
+    --color1:#ff3636;
+  }
+h2{
+    font-size: 2.2rem;
+    letter-spacing: .12rem;
+    cursor:pointer
+}
+h1{
+    font-size: 4.2rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    color: #581e1e;
+}
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutme{
+    background-color: var(--background2);
+    display: flex;
+}
+.me{
+    color:var(--color1) ;
+}
+.h1{
+    color: #ffffffff;
+}
+.texts_aboutme h4{
+    color:#ffffffff
+}
+.img2 img{
+    width: 40%;
+    height: 90%;
+    margin-left: 15%;
+}
+.texts_aboutme .color{
+    color: rgb(244, 196, 119);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
